@@ -1,0 +1,45 @@
+Algoritmo "QUESTAO 10 "
+
+var
+
+   litros,  precolitro , precototal , tipodecombustivel, desconto :real
+
+
+
+Inicio
+
+   escreval("qual o tipo de combustivel vc  vai querer? ")
+   escreval("digite A-ALCOOL E G-GASOLINA ")
+   leia(tipodecombustivel)
+
+   escreval("quantos litros vai querer? ")
+   leia(litros)
+
+   se (tipodecombustivel = "A") entao
+      precolitro <- 3.79
+   fimse
+
+   se litros <= 25 entao
+
+      desconto <- 0.02
+   senao
+
+      desconto <- 0.04
+   fimse
+
+
+   se (tipodecombustivel = "G") entao
+      precolitro <- 6.59
+   fimse
+
+   se (litros <= 25) entao
+      desconto <- 0.03
+   senao
+      desconto <- 0.05
+   fimse
+
+   precototal <- (litros * precolitro) - (litros * precolitro * desconto)
+
+   escreval("o precço a ser pago e de R$" , precototal)
+
+Fimalgoritmo
