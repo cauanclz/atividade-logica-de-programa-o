@@ -13,18 +13,20 @@ Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
    escreval("digite seu nome ")
    leia(nome)
-
+    escreval(" digite F PARA FEMININO  e M PARA MASCULINO ")
    escreval (" qual e o seu sexo ? ")
    leia(sexo)
 
    escreval("qual o seu estado civil? ")
    leia(estadocivil)
 
-   se (sexo= "feminino")e(estadocivil = "casada")entao
+   se (sexo= "F")ou (sexo= "f") e(estadocivil = "casada")ou ( estadocivil = "CASADA")entao
       escreval("quanto tempo de casamento ?")
       leia(tempodecasada)
 
+   limpatela
    fimse
+   
    escreval("NOME: " , nome)
 
    escreval("SEXO: " , sexo)
